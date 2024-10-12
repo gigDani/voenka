@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+   	 <title>Site with dark theme</title>
+   	 <meta charset="utf-8">
+   	 <link rel="stylesheet" type="text/css" href="styles/main.css">
+   	 <link rel="stylesheet" type="text/css" href="styles/light.css" id="theme-link">
+    </head>
+    <body>
+   	 <div class="wrapper">
+   		 <div class="theme-button" id="theme-button">Change theme</div>
+   		 <header class="header">
+   			 <div class="header__content">
+   				 <h1>Site with dark theme</h1>
+   				 <nav class="nav">
+   					 <div class="nav__content">
+   						 <a href="#" class="nav__item nav__item_active">Home</a>
+   						 <a href="#" class="nav__item">Blog</a>
+   						 <a href="#" class="nav__item">About</a>
+   						 <a href="#" class="nav__item">Contacts</a>
+   					 </div>
+   				 </nav>
+   			 </div>
+   		 </header>
+   		 <main class="main">
+   			 <article class="main__content">
+   				 //Тут будет Lorem Ipsum
+   			 </article>
+   		 </main>
+   	 </div>
+   	 <script type="text/javascript" src="scripts/themes.js"></script>
+    </body>
+</html>
+<style>
+body, html
+{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+    font-siz: 16px;
+}
+
+.wrapper
+{
+    width: 100%;
+}
+
+.header
+{
+    background: #ccc;
+}
+
+.header__content
+{
+    padding: 5px;
+}
+
+.nav__item
+{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 15px 25px;
+    margin: 2px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.main__content
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.theme-button
+{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    display: inline-block;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+</style>
